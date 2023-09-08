@@ -1,0 +1,52 @@
+img.page_404_back {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.3;
+}
+
+div.page_404_box {
+	position: fixed;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 90%;
+	height: 90%;
+}
+
+img.page_404_error_smile {
+	width: 100%;
+	opacity: 0.3;
+	padding-right: 20px;
+}
+
+span.page_404_text {
+	display: block;
+	font-size: 4.2em;
+	color: #2C2C2C;
+}
+
+a.rules_go_to_main {
+	display: inline-block;
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+	border-radius: 3px 15px 3px 15px;
+	color: #FFF;
+	font-size: 1.8em;
+	padding: 10px;
+	font-family: Roboto;
+	margin-top: 10px;
+}
+
+a.rules_go_to_main:hover {
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+	background: #E97FF9;
+}
+
+img.purchase_success {
+	width: 100%;
+	opacity: 0.5;
+	padding-right: 20px;
+}

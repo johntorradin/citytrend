@@ -1,0 +1,278 @@
+div#account_reg, div#account_enter {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+}
+
+div#account_reg_step_1, div#account_reg_step_2, div#account_enter_step_1, 
+div#account_enter_step_2, div#account_enter_step_3 {
+	opacity: 0;
+	display: none;
+}
+
+div.account_reg, div.account_enter {
+	background: #FFF;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+	z-index: 100;
+	padding: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #2C2C2C;
+    height: 90%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+@media (max-width: 991.98px) {
+  	div.account_reg, div.account_enter {
+		width: 90%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  	div.account_reg, div.account_enter {
+		width: 70%;
+	}
+}
+
+@media (min-width: 1200px) {
+  	div.account_reg, div.account_enter {
+		width: 50%;
+	}
+}
+
+div.account_data_line {
+	width: 100%;
+	margin-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+button.account_rules_checkbox {
+	display: inline-block;
+	margin: 0;
+	width: 26px;
+	height: 26px;
+	color: #358E35;
+	border: 1px solid #979797;
+	border-radius: 50%;
+	font-size: 1.4em;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+button.account_rules_checkbox:hover {
+	box-shadow: 0px 0px 2px 1px #74bbe4;
+}
+
+span.account_rules_title {
+	margin: 0;
+	font-size: 1.6em;
+}
+
+span.account_rules_error {
+	box-shadow: 0px 0px 2px 1px #F55123;
+}
+
+h1.account_data_line_title {
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #2C2C2C;
+	font-size: 2.8em;
+	margin: 0;
+}
+
+h1.account_data_line_title_error {
+	color: #F55123;
+}
+
+h1.account_data_line_note {
+	display: block;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	color: #2C2C2C;
+	font-size: 2.0em;
+	margin-top: 20px;
+	margin-bottom: 40px;	
+}
+
+h1.account_data_line_note_error {
+	color: #F55123;
+}
+
+div.account_data_title {
+	color: #5C5C5C;
+	font-size: 1.4em;
+	margin-right: 20px;
+}
+
+input.account_field {
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid #615C5C;
+	padding: 3px;
+	width: 80%;
+	font-size: 1.8em;
+}
+
+input.account_field_allow {
+	box-shadow: 0px 0px 2px 1px #358E35;
+}
+
+input.account_field_error {
+	box-shadow: 0px 0px 2px 1px #F55123;
+}
+
+span.account_field_error_note {
+	display: block;
+	margin-top: 5px;
+	color: #F55123;
+	font-size: 1.6em;
+}
+
+em.account_field_check, em.account_field_times {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	text-align: center;
+	color: #358E35;
+	font-size: 1.6em;
+}
+
+em.account_field_times {
+	color: #F55123;
+}
+
+p.account_error_text {
+	position: absolute;
+	z-index: 1;
+	background: #FFF;
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #F55123;
+	margin-right: 50px;
+}
+
+div.account_gender_box {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+button.account_gender_checkbox {
+	border: 1px solid #979797;
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	margin-right: 5px;
+	padding: 0;
+	font-size: 1.4em;
+	color: #358E35;
+}
+
+button.account_gender_checkbox:hover {
+	color: #358E35;
+	box-shadow: 0px 0px 2px 1px #74bbe4;
+}
+
+span.account_gender_male, span.account_gender_female {
+	font-size: 1.8em;
+	color: #2C2C2C;
+}
+
+span.account_gender_male {
+	margin-right: 20px;
+}
+
+a.account_go_to_main, button.account_back, button.account_clear, button.account_reg, button.account_enter, .ap_btn {
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+	border-radius: 3px 15px 3px 15px;
+	color: #FFF;
+	font-size: 1.6em;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-family: Roboto;
+}
+
+.ap_btn {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a.account_go_to_main:hover,  button.account_back:hover, button.account_clear:hover, button.account_reg:hover, button.account_enter:hover, .ap_btn:hover {
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+	background: #E97FF9;
+	color: #FFF;
+}
+
+.ap_btn:focus {
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+}
+
+div.account_recaptcha {
+	
+}
+
+div.account_recaptcha_error {
+	box-shadow: 0px 0px 2px 1px #F55123;
+}
+
+button.account_remember {
+	display: inline-block;
+	text-align: center;
+	color: #3A749D;
+	padding: 0;
+	font-size: 1.6em;
+}
+
+button.account_remember:hover {
+	color: #203F56;
+}
+
+button#account_reg_finish {
+	display: none;
+}
+
+.ap_textarea {
+	display: block;
+	width: 100%;
+	border-radius: 3px;
+	font-size: 1.4em;
+	resize: none;
+	overflow-y: scroll;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 2px solid #74bbe4;
+	height: 400px;
+}
+
+.ap_input {
+	display: block;
+	width: 200px;
+	height: 30px;
+	border: 2px solid #74bbe4;
+	border-radius: 3px;
+	font-size: 1.6em;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}

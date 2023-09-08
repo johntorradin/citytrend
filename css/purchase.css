@@ -1,0 +1,355 @@
+div#purchase_box {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+}
+
+div#purchase_step_1, div#purchase_step_2, div#purchase_step_3 {
+	opacity: 0;
+	display: none;
+}
+
+div#purchase_step_1 {
+	opacity: 100%;
+	display: block;
+}
+
+div.purchase {
+	background: #FFF;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+	z-index: 100;
+	padding: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #2C2C2C;
+	width: 70%;
+    height: 90%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+@media (max-width: 991.98px) {
+  	div.purchase {
+		width: 90%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  	div.purchase {
+		width: 70%;
+	}
+}
+
+@media (min-width: 1200px) {
+  	div.purchase {
+		width: 70%;
+	}
+}
+
+div.purchase_step_1_main_zone {
+	width: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	height: 260px;
+	margin-bottom: 20px;
+}
+
+div.purchase_items_list {
+	width: 100%;
+	padding: 10px;
+	margin-top: 60px;
+}
+
+div.purchase_item {
+	display: block;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	min-height: 100px;
+	border-radius: 3px;
+	border: 1px solid #E1E1E1;
+}
+
+button.purchase_item_delete {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	border-radius: 3px;
+	border: 1px solid #E1E1E1;
+	color: #2C2C2C;
+	font-size: 1.4em;
+}
+
+button.purchase_item_delete:hover {
+	color: #000;
+    box-shadow: 0px 0px 2px 1px #74bbe4;
+}
+
+div.purchase_item_price {
+	height: 26px;
+	line-height: 26px;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	border-radius: 3px;
+	border: 1px solid #E1E1E1;
+	color: #2C2C2C;
+	font-size: 1.6em;
+	color: #2C2C2C;
+	font-weight: bold;
+	background: #FFF;
+}
+
+img.purchase_item_img {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+div.purchase_item_info_line {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	font-size: 1.6em;
+}
+
+a.purchase_item_link {
+	color: #2C2C2C;
+}
+
+a.purchase_item_link:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+div.purchase_item_color_circle {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 1px solid #979797;
+}
+
+button.item_count_minus, button.item_count_plus {
+	border: 1px solid #979797;
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	padding: 0;
+	color: #2C2C2C;
+}
+
+button.item_count_minus:hover, button.item_count_plus:hover {
+	color: #000;
+	box-shadow: 0px 0px 2px 1px #74bbe4;
+}
+
+span.purchase_item_count {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div.purchase_data_line {
+	width: 100%;
+	margin-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+h1.purchase_data_line_title {
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #2C2C2C;
+	font-size: 2.8em;
+	margin: 0;
+}
+
+h1.purchase_data_line_note {
+	display: block;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	color: #2C2C2C;
+	font-size: 2.0em;
+	margin-top: 20px;
+	margin-bottom: 40px;	
+}
+
+div.purchase_all_items_count {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.8em;
+}
+
+div.purchase_all_price {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.8em;
+}
+
+div.purchase_all_items_count span, div.purchase_all_price span {
+	font-weight: bold;
+}
+
+div.purchase_data_title {
+	color: #5C5C5C;
+	font-size: 1.4em;
+	margin-right: 20px;
+}
+
+input.purchase_field {
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid #615C5C;
+	padding: 3px;
+	width: 80%;
+	font-size: 1.8em;
+}
+
+input.purchase_field_allow {
+	box-shadow: 0px 0px 2px 1px #358E35;
+}
+
+input.purchase_field_error {
+	box-shadow: 0px 0px 2px 1px #F55123;
+}
+
+span.purchase_field_error_note {
+	display: block;
+	margin-top: 5px;
+	color: #F55123;
+	font-size: 1.6em;
+}
+
+em.purchase_field_check, em.purchase_field_times {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	text-align: center;
+	color: #358E35;
+	font-size: 1.6em;
+}
+
+em.purchase_field_times {
+	color: #F55123;
+	display: none;
+	margin-left: 5px;
+}
+
+a.purchase_go_to_main, button.purchase_back, button.purchase_clear, 
+button.purchase_next, button.purchase_finish {
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+	border-radius: 3px 15px 3px 15px;
+	color: #FFF;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+	margin-top: 10px;
+	font-family: Roboto;
+}
+
+button.purchase_back, button.purchase_clear, 
+button.purchase_next, button.purchase_finish {
+	font-size: 1.6em;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+button.purchase_next_1 {
+	margin-top: 20px;
+	font-size: 2.0em;
+}
+
+a.purchase_go_to_main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -20px;
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 1.4em;
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 3px 15px 3px 15px;
+}
+
+a.purchase_go_to_main:hover, button.purchase_back:hover, button.purchase_clear:hover, 
+button.purchase_next:hover, button.purchase_finish:hover {
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+	background: #E97FF9;
+}
+
+h1.purchase_metods_title {
+	display: block;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	color: #2C2C2C;
+	font-size: 2.0em;
+	margin-top: 70px;
+}
+
+div.purchase_metods_info {
+	margin-top: 10px;
+}
+
+div.purchase_metod {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 2px;
+	margin-left: 2px;
+	border: 1px solid #ECECED;
+	border-radius: 50%;
+	padding: 3px;
+}
+
+img.purchase_metod_img {
+	display: block;
+	width: 100%;
+}
+
+div.purchase_metod:nth-of-type(1) {
+	border-color: #A03DFF;
+}
+
+div.purchase_metod:nth-of-type(2) {
+	border-color: #FF8800;
+}
+
+div.purchase_metod:nth-of-type(3) {
+	border-color: #036CB5;
+}
+
+div.purchase_metod:nth-of-type(4) {
+	border-color: #01B257;
+}
+
+div.purchase_metod:nth-of-type(5) {
+	border-color: #2B3893;
+}
+
+div.purchase_metod:nth-of-type(6) {
+	border-color: #FF0000;
+}

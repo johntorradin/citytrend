@@ -1,0 +1,375 @@
+a.logo {
+	pointer-events: none;
+  	cursor: default;
+}
+
+a#header_nav_link_first {
+	pointer-events: none;
+  	cursor: default;
+}
+
+div.content_main {
+	min-height: 1000px;
+}
+
+img.main_back {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.3;
+}
+
+div.main_content_title {
+	width: 100%;
+	margin-top: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h1.main_content_title_h1 {
+	position: relative;
+	opacity: 0;
+}
+
+h1.main_content_title_h1 span {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 0.8em;
+	color: #2C2C2C;
+	text-transform: uppercase;
+	animation: flip 2s infinite;
+	animation-delay: calc(.2s * var(--i))
+}
+
+div.watched_items_title {
+	width: 100%;
+	margin-top: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	z-index: 1;
+}
+
+div.watched_items_title h1 {
+	font-size: 2.6em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+@keyframes flip {
+	0%,80% {
+		transform: rotateY(360deg) 
+	}
+}
+
+div.discounted_items {
+	width: 90%;
+	margin: 0 auto;
+}
+
+a.discounted_item {
+	background: #FFF;
+	display: block;
+	border: 1px solid #E1E1E1;
+	color: #5C5C5C;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity: 0;
+}
+
+a.discounted_item:hover {
+	color: #000;
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+}
+
+img.discounted_item_image {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.discounted_item_info {
+	padding: 20px;
+	padding-bottom: 5px;
+}
+
+div.discounted_item_price {
+	font-size: 1.4em;
+}
+
+div.discounted_item_price span.actual_price {
+	color: #000;
+	font-size: 1.285em;
+	font-weight: bold;
+}
+
+span.old_price {
+	display: block;
+	color: #000;
+	color: #F55123;
+}
+
+button.sets_items_more, button.top_items_more, button.discounted_items_more {
+	opacity: 0;
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+	border-radius: 3px 15px 3px 15px;
+	color: #FFF;
+	font-size: 1.8em;
+	text-align: center;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: Roboto;
+}
+
+button.sets_items_more:hover, button.top_items_more:hover, button.discounted_items_more:hover {
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+	background: #E97FF9;
+}
+
+div.top_catalog_items {
+	width: 90%;
+	margin: 0 auto;
+}
+
+a.top_catalog_item {
+	background: #FFF;
+	display: block;
+	opacity: 0;
+	border: 1px solid #E1E1E1;
+	color: #5C5C5C;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a.top_catalog_item:hover {
+	color: #000;
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+}
+
+img.top_catalog_item_image {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.top_catalog_item_info {
+	padding: 20px;
+	padding-bottom: 5px;
+}
+
+div.top_catalog_item_price {
+	font-size: 1.4em;
+}
+
+div.top_catalog_item_price span.actual_price {
+	color: #000;
+	font-size: 1.285em;
+	font-weight: bold;
+}
+
+div.top_catalog_item_name, div.discounted_item_name, div.sets_item_name, div.other_item_name {
+	font-size: 1.6em;
+}
+
+span.top_catalog_item_rating {
+	display: block;
+	margin-right: 5px;
+	font-size: 1.6em;
+}
+
+span.top_catalog_item_stars {
+	font-size: 2.0em;
+	color: #F9A603;
+}
+
+span.top_catalog_item_recommented {
+	font-size: 1.2em;
+}
+
+div.sets_items {
+	width: 80%;
+	margin: 0 auto;
+}
+
+a.sets_item {
+	background: #FFF;
+	display: block;
+	border: 1px solid #E1E1E1;
+	color: #5C5C5C;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a.sets_item:hover {
+	color: #000;
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+}
+
+img.sets_item_image {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.sets_item_info {
+	padding: 20px;
+	padding-bottom: 5px;
+}
+
+div.sets_item_price {
+	font-size: 1.4em;
+}
+
+div.sets_item_price span.actual_price {
+	color: #000;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+div.sets_item_gift_text {
+	color: #00A300;
+	font-size: 1.6em;
+}
+
+div.sets_item_second_item {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 100px;
+	border-radius: 30px;
+	border: 1px solid #E1E1E1;
+	background: #FFF;
+}
+
+img.second_item_image {
+	display: block;
+	width: 100%;
+	border-radius: 30px;
+}
+
+em.second_item_plus_icon {
+	position: absolute;
+	display: block;
+	font-size: 1.8em;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	top: 5px;
+	left: 5px;
+	border-radius: 30px;
+	color: #00A300;
+	background: #FFF;
+}
+
+div.other_items {
+	width: 90%;
+	margin: 0 auto;
+}
+
+a.other_item {
+	background: #FFF;
+	display: block;
+	border: 1px solid #E1E1E1;
+	color: #5C5C5C;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity: 0;
+}
+
+a.other_item:hover {
+	color: #000;
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+}
+
+img.other_item_image {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.other_item_info {
+	padding: 20px;
+	padding-bottom: 5px;
+}
+
+div.other_item_price {
+	font-size: 1.4em;
+}
+
+div.other_item_price span.actual_price {
+	color: #000;
+	font-size: 1.285em;
+	font-weight: bold;
+}
+
+span.other_item_purchases {
+	font-size: 1.2em;
+}
+
+button.other_items_more {
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+	border-radius: 3px 15px 3px 15px;
+	color: #FFF;
+	font-size: 1.8em;
+	text-align: center;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: Roboto;
+	opacity: 0;
+}
+
+button.other_items_more:hover {
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+	background: #E97FF9;
+}
+
+div.citytrend_advantages {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+div.citytrend_advantages_info {
+	font-size: 2.0em;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+
+div.citytrend_advantages_title {
+	color: #84498E;
+	font-size: 1.4em;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+div.citytrend_advantages_title h1 {
+	font-size: 3.0em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #84498E;
+}
+
+div.citytrend_advantages_title em {
+	color: #54779D;
+}

@@ -1,0 +1,64 @@
+img.rules_back {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.3;
+}
+
+div.rules_info_box {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 200px;
+	color: #2C2C2C;
+}
+
+h1.rules_info_h1 {
+	color: #2C2C2C;
+	font-size: 3.0em;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+h2.rules_info_h2 {
+	color: #2C2C2C;
+	font-size: 2.6em;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+p.rules_text {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	margin-bottom: 20px;
+	line-height: 2;
+	font-size: 1.6em;
+}
+
+a.rules_go_to_main, a.rules_go_to_main_2 {
+	display: inline-block;
+	background: linear-gradient(to right, #E97FF9, #5CBEFF);
+	border-radius: 3px 15px 3px 15px;
+	color: #FFF;
+	font-size: 1.8em;
+	padding: 10px;
+	font-family: Roboto;
+}
+
+a.rules_go_to_main {
+	margin-bottom: 40px;
+}
+
+a.rules_go_to_main_2 {
+	margin-top: 40px;
+}
+
+a.rules_go_to_main:hover, a.rules_go_to_main_2:hover {
+	box-shadow: 0px 0px 2px 1px #74BBE4;
+	background: #E97FF9;
+}
