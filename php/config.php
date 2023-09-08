@@ -5,21 +5,21 @@
 
 
 		public $header_news 			= 'Цены пополам! Только до 10 апреля!'; // Текст новостей в Header
-		public $site_url 				= 'http://citytrend.local/'; // Адрес сайта
-		public $mysql_host 				= 'localhost'; // Хост mysql
-		public $mysql_user 				= 'root'; // Пользователь mysql
+		public $site_url 				= ''; // Адрес сайта
+		public $mysql_host 				= ''; // Хост mysql
+		public $mysql_user 				= ''; // Пользователь mysql
 		public $mysql_pass 				= ''; // Пароль mysql
-		public $mysql_db 				= 'citytrend'; // База данных mysql
-		public $gr_sitekey 				= '6LfKAvonAAAAAOqw_YwZ-0Xr-sObRYLg9OYY27lc'; // Ключ g-recaptcha для html
-		public $gr_secret  				= '6LfKAvonAAAAANxQARgrIvQ2kXmBaITcjj--_iiL'; // Секретный ключ g-recaptcha
-		public $salt_1 					= '584858KGFK%*$%*$*%'; // Код №1 для создания токена
-		public $salt_2 					= 'lhg60506$#243444$2'; // Код №2 для создания токена
-		public $telephone 				= '8-888-777-94-94'; // Телефон сайта
-		public $email 					= 'johntorradin@yandex.ru'; // Email сайта
-		public $forward_email 			= 'torradin100@yandex.ru'; // Email, с которого будут отправлятся письма пользователям
-		public $forward_email_pass 		= 'ovatjmlwdymrnmop'; // Пароль !!!доступа приложений!!! от Email, с которого будут отправлятся письма пользователям
-		public $yookassa_shop_id		= '321223'; // Идентификатор магазина ЮКасса
-		public $yookassa_secret_key		= 'test_tc4VDBpHBJOI_lE3dogMnW2S4dxbktDCRuUgtGrK0HU'; // Секретный ключ ЮКасса
+		public $mysql_db 				= ''; // База данных mysql
+		public $gr_sitekey 				= ''; // Ключ g-recaptcha для html
+		public $gr_secret  				= ''; // Секретный ключ g-recaptcha
+		public $salt_1 					= ''; // Код №1 для создания токена
+		public $salt_2 					= ''; // Код №2 для создания токена
+		public $telephone 				= ''; // Телефон сайта
+		public $email 					= ''; // Email сайта
+		public $forward_email 			= ''; // Email, с которого будут отправлятся письма пользователям
+		public $forward_email_pass 		= ''; // Пароль !!!доступа приложений!!! от Email, с которого будут отправлятся письма пользователям
+		public $yookassa_shop_id		= ''; // Идентификатор магазина ЮКасса
+		public $yookassa_secret_key		= ''; // Секретный ключ ЮКасса
 		public $ap_user					= 'admin'; // Логин для входа в панель администратора
 		public $youtube_soc 			= 'https://www.youtube.com'; // YouTube
 		public $instagram_soc 			= 'http://instagram.com'; // Instagram
